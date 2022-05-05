@@ -11,9 +11,10 @@ node_modules
 dist
 dist-ssr
 *.local
-deploy.sh
+build
+ydeploydeploy.sh
 
-# Editor directories and files
+ and files
 .vscode/*
 !.vscode/extensions.json
 .idea
