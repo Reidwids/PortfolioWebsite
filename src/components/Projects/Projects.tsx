@@ -51,7 +51,7 @@ export default function Projects() {
 					</div>
 				</div>
 			</div>
-			<Loader type="ball-scale-ripple"></Loader>
+			<Loader active={true} type="ball-scale-ripple"></Loader>
 		</div>
 	);
 }

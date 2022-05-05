@@ -1,4 +1,4 @@
-//// @ts-nocheck
+// @ts-nocheck
 import React, { useEffect, useState } from 'react';
 import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
@@ -101,7 +101,7 @@ export default function Skills() {
 					</li>
 				</ul>
 			</canvas>
-			<Loader type="ball-scale-ripple"></Loader>
+			<Loader active={true} type="ball-scale-ripple"></Loader>
 		</div>
 	);
 }
