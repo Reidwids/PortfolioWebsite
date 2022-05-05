@@ -11,7 +11,7 @@ export default function Sidebar() {
 		<div className="nav-bar">
 			<Link className="logo" to="/">
 				<img alt="logo" src={LogoD}></img>
-				<div id="logoSubtitle">Derek R-W</div>
+				{/* <div id="logoSubtitle">Derek R-W</div> */}
 			</Link>
 			<nav>
 				<NavLink end to="/" className={({ isActive }) => (isActive ? 'active' : '')}>

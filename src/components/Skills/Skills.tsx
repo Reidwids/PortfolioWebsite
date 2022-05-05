@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
+import './Skills.scss';
 
 export default function Skills() {
 	const [letterClass, setletterClass] = useState('text-animate');
@@ -16,13 +17,13 @@ export default function Skills() {
 			textColour: '#FFF',
 			outlineThickness: 0.5,
 			outlineColour: '#fe0853',
-			maxSpeed: 0.06,
+			maxSpeed: 0.05,
 			freezeActive: true,
 			shuffleTags: true,
 			shape: 'sphere',
-			zoom: 0.9,
+			zoom: 0.8,
 			noSelect: true,
-			textFont: null,
+			textFont: 'Helvetica',
 			pinchZoom: true,
 			freezeDecel: true,
 			fadeIn: 3000,
@@ -35,8 +36,14 @@ export default function Skills() {
 		<div className="container skills-page">
 			<div className="text-zone">
 				<h1>
-					<AnimatedLetters strArray={['P', 'r', 'o', 'j', 'e', 'c', 't', 's']} idx={15} letterClass={letterClass}></AnimatedLetters>
+					<AnimatedLetters strArray={['S', 'k', 'i', 'l', 'l', 's']} idx={15} letterClass={letterClass}></AnimatedLetters>
 				</h1>
+				<p>My assets lie in my full stack experience paired with strong soft skills such as leadership, attention to detail, quick-learning and thinking, as well as a macro-understanding of business.</p>
+				<p>
+					My core skillset lies in web development - working in the frontend using <span style={{ color: '#ffd700' }}>React, JavaScript, HTML5, and CSS/CSS libraries, </span> while also in the backend using{' '}
+					<span style={{ color: '#ffd700' }}>NodeJS, Express, Python, Django, MongoDB, and PostgreSQL.</span>
+				</p>
+				<p>I excel in fast-paced environments that strive to deliver excellence. I am continuously pushing myself to get better, and am currently working hard to grow this list even larger!</p>
 			</div>
 			<canvas width="500" height="500" id="myCanvas">
 				<ul>
