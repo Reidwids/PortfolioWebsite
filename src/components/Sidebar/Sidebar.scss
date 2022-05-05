@@ -89,6 +89,11 @@ nav {
 			content: 'SKILLS';
 		}
 	}
+	a.projects-link {
+		&:after {
+			content: 'PROJECTS';
+		}
+	}
 	a.active {
 		svg {
 			color: #ffd700;
