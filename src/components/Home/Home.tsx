@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useEffect, useState } from 'react';
 import './Home.scss';
 import LogoD from '../../assets/images/D.svg';

@@ -1,9 +1,11 @@
+// @ts-nocheck
 import React, { useEffect, useState, useRef } from 'react';
 import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
 import './Contact.scss';
+import 'leaflet/dist/leaflet.css';
 import emailjs from '@emailjs/browser';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 
 export default function Contact() {
 	const [letterClass, setletterClass] = useState('text-animate');
@@ -63,24 +65,15 @@ export default function Contact() {
 						</form>
 					</div>
 				</div>
-				<div className="info-map">
-					Derek Reid-Wilkinson,
-					<br></br>
-					Canada,
-					<br></br>
-					1951 Eglinton Avenue West,
-					<br></br>
-					York,
-					<br></br>
-					Ontario
-					<br></br>
-					<span>reidwids@gmail.com</span>
-				</div>
-				<div className="map-wrap">
-					<MapContainer center={[44.96366, 19.61045]} zoom={13}>
-						<TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-						<Marker position={[44.96366, 19.61045]}>
-							<Popup>Sloba lives here, come over for a cup of coffee :)</Popup>
+				<div id="map">
+					<MapContainer style={{ height: '100%', width: '100%' }} center={[43.69912, -79.435707]} zoom={12} scrollWheelZoom={true}>
+						<TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+						<Marker position={[43.69912, -79.435707]}>
+							<Popup>
+								<div style={{ fontSize: '12px' }}>
+									Eglinton Avenue West,<br></br> Toronto, Ontario
+								</div>
+							</Popup>
 						</Marker>
 					</MapContainer>
 				</div>

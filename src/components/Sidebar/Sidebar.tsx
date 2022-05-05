@@ -3,8 +3,8 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import LogoD from '../../assets/images/D.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faComputer, faEnvelope, faGear, faGears, faHome, faUser, faUserGear } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin, faPagelines } from '@fortawesome/free-brands-svg-icons';
 
 export default function Sidebar() {
 	return (
@@ -22,6 +22,12 @@ export default function Sidebar() {
 				</NavLink>
 				<NavLink end to="/contact" className={({ isActive }) => (isActive ? 'active contact-link' : 'contact-link')}>
 					<FontAwesomeIcon id="homeLink" icon={faEnvelope} color="#4d4d4e"></FontAwesomeIcon>
+				</NavLink>
+				<NavLink end to="/skills" className={({ isActive }) => (isActive ? 'active skills-link' : 'skills-link')}>
+					<FontAwesomeIcon id="homeLink" icon={faGears} color="#4d4d4e"></FontAwesomeIcon>
+				</NavLink>
+				<NavLink end to="/projects" className={({ isActive }) => (isActive ? 'active projects-link' : 'projects-link')}>
+					<FontAwesomeIcon id="homeLink" icon={faComputer} color="#4d4d4e"></FontAwesomeIcon>
 				</NavLink>
 			</nav>
 			<ul>
