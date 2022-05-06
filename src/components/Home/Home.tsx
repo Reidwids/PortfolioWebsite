@@ -22,30 +22,32 @@ export default function Home() {
 	}, []);
 	return (
 		<>
-			<div className="container home-page">
-				<div className="text-zone">
-					<h1>
-						<span className={`${letterClass} _12`}>H</span>
-						<span className={`${letterClass} _13`}>i</span>
-						<span className={`${letterClass} _14`}>,</span>
-						<br></br>
-						<span className={`${letterClass} _15`}>I</span>
-						<span className={`${letterClass} _16`}>'</span>
-						<span className={`${letterClass} _17`}>m</span>
-						<img src={LogoD} alt="developer"></img>
-						<AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={18}></AnimatedLetters>
-						<br></br>
-						<AnimatedLetters letterClass={letterClass} strArray={job1Array} idx={23}></AnimatedLetters>&nbsp;
-						<AnimatedLetters letterClass={letterClass} strArray={job2Array} idx={26}></AnimatedLetters>
-					</h1>
-					<h2>Full-Stack Web Developer / MERN Stack / Django+Python</h2>
-					<Link to="/contact" className="flat-button">
-						CONTACT ME
-					</Link>
+			<div className="center-container">
+				<div className="container home-page">
+					<div className="text-zone">
+						<h1>
+							<span className={`${letterClass} _12`}>H</span>
+							<span className={`${letterClass} _13`}>i</span>
+							<span className={`${letterClass} _14`}>,</span>
+							<br></br>
+							<span className={`${letterClass} _15`}>I</span>
+							<span className={`${letterClass} _16`}>'</span>
+							<span className={`${letterClass} _17`}>m</span>
+							<img src={LogoD} alt="developer"></img>
+							<AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={18}></AnimatedLetters>
+							<br></br>
+							<AnimatedLetters letterClass={letterClass} strArray={job1Array} idx={23}></AnimatedLetters>&nbsp;
+							<AnimatedLetters letterClass={letterClass} strArray={job2Array} idx={26}></AnimatedLetters>
+						</h1>
+						<h2>Full-Stack Web Developer / MERN Stack / Django+Python</h2>
+						<Link to="/contact" className="flat-button">
+							CONTACT ME
+						</Link>
+					</div>
+					<Logo></Logo>
 				</div>
-				<Logo></Logo>
+				<Loader classNametype="ball-scale-ripple"></Loader>
 			</div>
-			<Loader type="ball-scale-ripple"></Loader>
 		</>
 	);
 }

@@ -22,77 +22,79 @@ export default function Projects() {
 		})();
 	}, []);
 	return (
-		<div className="container projects-page">
-			<div className="text-zone">
-				<h1>
-					<AnimatedLetters strArray={['P', 'r', 'o', 'j', 'e', 'c', 't', 's']} idx={15} letterClass={letterClass}></AnimatedLetters>
-				</h1>
-				<p>I love project based work and am always looking for opportunities to apply my skillset while learning something new.</p>
-				<p>These are some of my favorite projects. Please click though to see the function of the apps as well as the skills used to build them!</p>
-			</div>
-			<div id="projects-container">
-				<Swiper
-					effect={'coverflow'}
-					centeredSlides={true}
-					slidesPerView={2}
-					initialSlide={1}
-					spaceBetween={-30}
-					coverflowEffect={{
-						rotate: -30,
-						stretch: 0,
-						depth: 100,
-						modifier: 2,
-						slideShadows: true,
-					}}
-					pagination={true}
-					modules={[EffectCoverflow, Pagination]}
-					className="mySwiper"
-				>
-					<SwiperSlide className="swiper-slide">
-						<div className="swiper-content">
-							<a href="https://stay-put.herokuapp.com/" target="blank">
-								<img src={StayPutImg} className="webpageImg" />
-								<p>
-									<span style={{ fontWeight: 600 }}>Stay / Put</span> lets renters and buyers quickly connect with realtors to discuss properties for rent/sale! Developed with Python/Django/PostgreSQL/AWS.
-								</p>
-							</a>
-						</div>
-					</SwiperSlide>
-					<SwiperSlide className="swiper-slide">
-						<div className="swiper-content">
-							<a href="https://puny-swap-final.herokuapp.com/" target="blank">
-								<img src={PunySwapImg} id="psImg" />
+		<div className="center-container">
+			<div className="container projects-page">
+				<div className="text-zone">
+					<h1>
+						<AnimatedLetters strArray={['P', 'r', 'o', 'j', 'e', 'c', 't', 's']} idx={15} letterClass={letterClass}></AnimatedLetters>
+					</h1>
+					<p>I love project based work and am always looking for opportunities to apply my skillset while learning something new.</p>
+					<p>These are some of my favorite projects. Please click though to see the deployed product - and if you'd like to see the code, my github is linked on the nav-bar!</p>
+				</div>
+				<div id="projects-container">
+					<Swiper
+						effect={'coverflow'}
+						centeredSlides={true}
+						slidesPerView={2}
+						initialSlide={1}
+						spaceBetween={-40}
+						coverflowEffect={{
+							rotate: -40,
+							stretch: 0,
+							depth: 100,
+							modifier: 2,
+							slideShadows: true,
+						}}
+						pagination={true}
+						modules={[EffectCoverflow, Pagination]}
+						className="mySwiper"
+					>
+						<SwiperSlide className="swiper-slide">
+							<div className="swiper-content">
+								<a href="https://stay-put.herokuapp.com/" target="blank">
+									<img src={StayPutImg} className="webpageImg" />
+									<p>
+										<span style={{ fontWeight: 600 }}>Stay / Put</span> lets renters and buyers quickly connect with realtors to discuss properties for rent/sale! Developed with Python/Django/PostgreSQL/AWS.
+									</p>
+								</a>
+							</div>
+						</SwiperSlide>
+						<SwiperSlide className="swiper-slide">
+							<div className="swiper-content">
+								<a href="https://puny-swap-final.herokuapp.com/" target="blank">
+									<img src={PunySwapImg} id="psImg" />
 
-								<p>
-									<span style={{ fontWeight: 600 }}>Puny-Swap</span> is a UniSwap clone, providing sending and swapping services for crypto-currency. This project uses the full MERN stack, Solidity, Moralis, and RESTful APIs.
-								</p>
-							</a>
-						</div>
-					</SwiperSlide>
-					<SwiperSlide className="swiper-slide">
-						<div className="swiper-content">
-							<a href="https://reidwids.github.io/Battleship/" target="blank">
-								<img src={BattleshipImg} className="webpageImg" />
-								<p>
-									<span style={{ fontWeight: 600 }}>Battleship!</span> is a single player game where you fight on the open ocean to sink your opponents fleet of warships. Just make sure you sink theirs before they sink yours!
-								</p>
-							</a>
-						</div>
-					</SwiperSlide>
-					<SwiperSlide className="swiper-slide">
-						<div className="swiper-content">
-							<a href="https://stockbox1.herokuapp.com/" target="blank">
-								<img src={StocksBoxImg} id="sbImg" />
-								<p>
-									<span style={{ fontWeight: 600 }}>StockBox</span> lets you build a profile and face off against your friends to see who can build the best investment portfolio! This app was built with NodeJS, Express, MongoDB, and Bootstrap5.
-								</p>
-							</a>
-						</div>
-					</SwiperSlide>
-				</Swiper>
-				<div id="projects-blurb">Click a card to visit the project!</div>
+									<p>
+										<span style={{ fontWeight: 600 }}>Puny-Swap</span> is a UniSwap clone, providing sending and swapping services for crypto-currency. This project uses the full MERN stack, Solidity, Moralis, and RESTful APIs.
+									</p>
+								</a>
+							</div>
+						</SwiperSlide>
+						<SwiperSlide className="swiper-slide">
+							<div className="swiper-content">
+								<a href="https://reidwids.github.io/Battleship/" target="blank">
+									<img src={BattleshipImg} className="webpageImg" />
+									<p>
+										<span style={{ fontWeight: 600 }}>Battleship!</span> is a single player game where you fight on the open ocean to sink your opponents fleet of warships. Just make sure you sink theirs before they sink yours!
+									</p>
+								</a>
+							</div>
+						</SwiperSlide>
+						<SwiperSlide className="swiper-slide">
+							<div className="swiper-content">
+								<a href="https://stockbox1.herokuapp.com/" target="blank">
+									<img src={StocksBoxImg} id="sbImg" />
+									<p>
+										<span style={{ fontWeight: 600 }}>StockBox</span> lets you build a profile and face off against your friends to see who can build the best investment portfolio! This app was built with NodeJS, Express, MongoDB, and Bootstrap5.
+									</p>
+								</a>
+							</div>
+						</SwiperSlide>
+					</Swiper>
+					<div id="projects-blurb">Click a card to visit the project!</div>
+				</div>
+				<Loader active={true} type="ball-scale-ripple"></Loader>
 			</div>
-			<Loader active={true} type="ball-scale-ripple"></Loader>
 		</div>
 	);
 }

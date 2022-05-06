@@ -38,7 +38,18 @@
 		}
 	}
 }
-
+@media screen and (max-width: 830px) {
+	.logo-container {
+		width: 200px;
+		height: 409px;
+		position: absolute;
+		top: 30%;
+		right: 8%;
+		bottom: 0;
+		left: auto;
+		margin: auto;
+	}
+}
 .svg-container {
 	stroke: #ffd700;
 	stroke-width: 10;
