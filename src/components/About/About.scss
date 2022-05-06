@@ -73,23 +73,22 @@
 	}
 }
 @keyframes spincube {
-	from,
-	to {
+	0% {
 		transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
 	}
-	16% {
+	50% {
 		transform: rotateY(-90deg);
 	}
-	33% {
+	50% {
 		transform: rotateY(-90deg) rotateZ(90deg);
 	}
-	50% {
-		transform: rotateY(-180deg) rotateZ(90deg);
-	}
-	66% {
-		transform: rotateY(-270deg) rotateZ(90deg);
-	}
-	83% {
-		transform: rotateX(90deg);
-	}
+	// 50% {
+	// 	transform: rotateY(-180deg) rotateZ(90deg);
+	// }
+	// 66% {
+	// 	transform: rotateY(-270deg) rotateZ(90deg);
+	// }
+	// 83% {
+	// 	transform: rotateX(90deg);
+	// }
 }
