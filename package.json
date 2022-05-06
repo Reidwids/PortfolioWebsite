@@ -24,7 +24,8 @@
 		"react-leaflet": "^4.0.0",
 		"react-loaders": "^3.0.1",
 		"react-router-dom": "^6.3.0",
-		"sass": "^1.51.0"
+		"sass": "^1.51.0",
+		"sweetalert2": "^11.4.10"
 	},
 	"devDependencies": {
 		"@types/jquery": "^3.5.14",

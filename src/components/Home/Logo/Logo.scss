@@ -8,8 +8,7 @@
 	bottom: 0;
 	left: auto;
 	margin: auto;
-
-	svg {
+	.outline-logo {
 		width: 100%;
 		height: auto;
 		bottom: 0;
@@ -23,9 +22,21 @@
 		left: 0;
 		margin: auto;
 		width: 100%;
-		opacity: 0;
+		animation: fadeIn1 ease 10s;
+		transition: all 1s linear;
 		transform: rotateZ(20deg);
 		z-index: 2;
+	}
+	@keyframes fadeIn1 {
+		0% {
+			opacity: 0;
+		}
+		30% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
 	}
 }
 

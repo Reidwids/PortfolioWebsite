@@ -6,6 +6,7 @@ import './Contact.scss';
 import 'leaflet/dist/leaflet.css';
 import emailjs from '@emailjs/browser';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+import Swal from 'sweetalert2';
 
 export default function Contact() {
 	const [letterClass, setletterClass] = useState('text-animate');
