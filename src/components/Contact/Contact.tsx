@@ -6,7 +6,7 @@ import './Contact.scss';
 import 'leaflet/dist/leaflet.css';
 import emailjs from '@emailjs/browser';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
-import Swal from 'sweetalert2';
+// import Swal from 'sweetalert2';
 
 export default function Contact() {
 	const [letterClass, setletterClass] = useState('text-animate');
@@ -25,15 +25,23 @@ export default function Contact() {
 		emailjs
 			.sendForm('service_bvzc5cj', 'template_fze7f85', refForm.current)
 			.then(() => {
-				alert('Message Sent');
-				// window.location.reload(false);
+				alert('Your message was successfully sent!');
+				// Swal.fire({
+				// 	icon: 'success',
+				// 	title: 'Success',
+				// 	text: 'Your message was successfully sent!',
+				// });
 			})
 			.catch((error) => {
 				console.log(error);
-				alert('Failed to send message');
+				// Swal.fire({
+				// 	icon: 'error',
+				// 	title: 'Oops...',
+				// 	text: 'Failed to send message!',
+				// });
+				alert('Oops...Message failed to send!');
 			});
 	};
-
 	return (
 		<>
 			<div className="container contact-page">
