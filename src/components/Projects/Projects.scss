@@ -23,7 +23,9 @@
 }
 .mySwiper {
 	height: 350px;
-	width: 450px;
+	min-width: 450px;
+	width: 80%;
+	max-width: 600px;
 }
 .swiper-slide {
 	display: flex;
