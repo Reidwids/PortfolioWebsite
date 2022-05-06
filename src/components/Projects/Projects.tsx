@@ -1,4 +1,3 @@
-//// @ts-nocheck
 import React, { useState, useEffect } from 'react';
 import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
@@ -53,7 +52,9 @@ export default function Projects() {
 						<div className="swiper-content">
 							<a href="https://stay-put.herokuapp.com/" target="blank">
 								<img src={StayPutImg} className="webpageImg" />
-								<p>Stay / Put lets renters and buyers quickly connect with realtors to discuss properties for rent/sale! Developed with Python/Django/PostgreSQL/AWS.</p>
+								<p>
+									<span style={{ fontWeight: 600 }}>Stay / Put</span> lets renters and buyers quickly connect with realtors to discuss properties for rent/sale! Developed with Python/Django/PostgreSQL/AWS.
+								</p>
 							</a>
 						</div>
 					</SwiperSlide>
@@ -62,7 +63,9 @@ export default function Projects() {
 							<a href="https://puny-swap-final.herokuapp.com/" target="blank">
 								<img src={PunySwapImg} id="psImg" />
 
-								<p>Puny-Swap is a UniSwap clone, providing sending and swapping services for crypto-currency. This project uses the full MERN stack, Solidity, Moralis, and RESTful APIs.</p>
+								<p>
+									<span style={{ fontWeight: 600 }}>Puny-Swap</span> is a UniSwap clone, providing sending and swapping services for crypto-currency. This project uses the full MERN stack, Solidity, Moralis, and RESTful APIs.
+								</p>
 							</a>
 						</div>
 					</SwiperSlide>
@@ -70,7 +73,9 @@ export default function Projects() {
 						<div className="swiper-content">
 							<a href="https://reidwids.github.io/Battleship/" target="blank">
 								<img src={BattleshipImg} className="webpageImg" />
-								<p>Battleship! is a single player game where you fight on the open ocean to sink your opponents fleet of warships. Just make sure you sink theirs before they sink yours!</p>
+								<p>
+									<span style={{ fontWeight: 600 }}>Battleship!</span> is a single player game where you fight on the open ocean to sink your opponents fleet of warships. Just make sure you sink theirs before they sink yours!
+								</p>
 							</a>
 						</div>
 					</SwiperSlide>
@@ -78,7 +83,9 @@ export default function Projects() {
 						<div className="swiper-content">
 							<a href="https://stockbox1.herokuapp.com/" target="blank">
 								<img src={StocksBoxImg} id="sbImg" />
-								<p>StockBox lets you build a profile and face off against your friends to see who can build the best investment portfolio! This app was built with NodeJS, Express, MongoDB, and Bootstrap5.</p>
+								<p>
+									<span style={{ fontWeight: 600 }}>StockBox</span> lets you build a profile and face off against your friends to see who can build the best investment portfolio! This app was built with NodeJS, Express, MongoDB, and Bootstrap5.
+								</p>
 							</a>
 						</div>
 					</SwiperSlide>

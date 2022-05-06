@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import Sidebar from '../Sidebar/Sidebar';
 import './Layout.scss';
 
 export default function Layout() {
+	console.log('Width: ', window.innerWidth);
+	console.log('Height: ', window.innerHeight);
+
 	return (
 		<div className="App">
 			<Sidebar></Sidebar>
