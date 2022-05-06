@@ -24,6 +24,7 @@ export default function Home() {
 		<>
 			<div className="center-container">
 				<div className="container home-page">
+					<Logo></Logo>
 					<div className="text-zone">
 						<h1>
 							<span className={`${letterClass} _12`}>H</span>
@@ -44,7 +45,6 @@ export default function Home() {
 							CONTACT ME
 						</Link>
 					</div>
-					<Logo></Logo>
 				</div>
 				<Loader classNametype="ball-scale-ripple"></Loader>
 			</div>
