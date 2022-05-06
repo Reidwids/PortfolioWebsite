@@ -34,14 +34,15 @@ export default function Projects() {
 			<div id="projects-container">
 				<Swiper
 					effect={'coverflow'}
-					grabCursor={true}
 					centeredSlides={true}
-					slidesPerView={'auto'}
+					slidesPerView={2}
+					initialSlide={1}
+					spaceBetween={-30}
 					coverflowEffect={{
-						rotate: 50,
+						rotate: -30,
 						stretch: 0,
 						depth: 100,
-						modifier: 1,
+						modifier: 2,
 						slideShadows: true,
 					}}
 					pagination={true}
@@ -50,52 +51,39 @@ export default function Projects() {
 				>
 					<SwiperSlide className="swiper-slide">
 						<div className="swiper-content">
-							<img src={PunySwapImg} />
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione suscipit numquam impedit iste accusamus repellendus sequi architecto illum enim cupiditate. Accusamus, dolore provident totam maxime quos optio deleniti velit eum.</p>
+							<a href="https://stay-put.herokuapp.com/" target="blank">
+								<img src={StayPutImg} className="webpageImg" />
+								<p>Stay / Put lets renters and buyers quickly connect with realtors to discuss properties for rent/sale! Developed with Python/Django/PostgreSQL/AWS.</p>
+							</a>
 						</div>
 					</SwiperSlide>
 					<SwiperSlide className="swiper-slide">
 						<div className="swiper-content">
-							<img src={StayPutImg} />
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione suscipit numquam impedit iste accusamus repellendus sequi architecto illum enim cupiditate. Accusamus, dolore provident totam maxime quos optio deleniti velit eum.</p>
+							<a href="https://puny-swap-final.herokuapp.com/" target="blank">
+								<img src={PunySwapImg} id="psImg" />
+
+								<p>Puny-Swap is a UniSwap clone, providing sending and swapping services for crypto-currency. This project uses the full MERN stack, Solidity, Moralis, and RESTful APIs.</p>
+							</a>
 						</div>
 					</SwiperSlide>
 					<SwiperSlide className="swiper-slide">
 						<div className="swiper-content">
-							<img src={BattleshipImg} />
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione suscipit numquam impedit iste accusamus repellendus sequi architecto illum enim cupiditate. Accusamus, dolore provident totam maxime quos optio deleniti velit eum.</p>
+							<a href="https://reidwids.github.io/Battleship/" target="blank">
+								<img src={BattleshipImg} className="webpageImg" />
+								<p>Battleship! is a single player game where you fight on the open ocean to sink your opponents fleet of warships. Just make sure you sink theirs before they sink yours!</p>
+							</a>
 						</div>
 					</SwiperSlide>
 					<SwiperSlide className="swiper-slide">
 						<div className="swiper-content">
-							<img src={StocksBoxImg} />
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione suscipit numquam impedit iste accusamus repellendus sequi architecto illum enim cupiditate. Accusamus, dolore provident totam maxime quos optio deleniti velit eum.</p>
+							<a href="https://stockbox1.herokuapp.com/" target="blank">
+								<img src={StocksBoxImg} id="sbImg" />
+								<p>StockBox lets you build a profile and face off against your friends to see who can build the best investment portfolio! This app was built with NodeJS, Express, MongoDB, and Bootstrap5.</p>
+							</a>
 						</div>
 					</SwiperSlide>
 				</Swiper>
-				{/* <div id="projects">
-					<div className="project-block" id="punySwap">
-						<a href="https://github.com/Reidwids/PunySwapBE" target={'_blank'}>
-							<img src={PunySwapImg} alt="" className="project-image" />
-						</a>
-					</div>
-
-					<div className="project-block" id="stocksBox">
-						<a href="https://github.com/Reidwids/Battleship" target={'_blank'}>
-							<img src={StocksBoxImg} alt="" className="stockbox-image" />
-						</a>
-					</div>
-					<div className="project-block" id="battleship">
-						<a href="https://github.com/Reidwids/Battleship" target={'_blank'}>
-							<img src={BattleshipImg} alt="" className="project-image" />
-						</a>
-					</div>
-					<div className="project-block" id="stayPut">
-						<a href="https://github.com/Reidwids/Stay-Put" target={'_blank'}>
-							<img src={StayPutImg} alt="" className="project-image" />
-						</a>
-					</div>
-				</div> */}
+				<div id="projects-blurb">Click a card to visit the project!</div>
 			</div>
 			<Loader active={true} type="ball-scale-ripple"></Loader>
 		</div>
