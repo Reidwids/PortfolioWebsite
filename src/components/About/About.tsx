@@ -6,6 +6,10 @@ import React, { useEffect, useState } from 'react';
 import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
 import './About.scss';
+import Resume from '../../assets/images/Software Dev Master.pdf';
+import Download from '../../assets/images/downloadColored.svg';
+import DownloadBlue from '../../assets/images/downloadColoredBlue.svg';
+import { Link } from 'react-router-dom';
 
 export default function About() {
 	const [letterClass, setletterClass] = useState('text-animate');
@@ -29,7 +33,11 @@ export default function About() {
 							I have had a passion for technology for as long as I can remember. My background is in Science and Engineering, though I veered from STEM for some time to pursue my love of cooking. After travelling the world and working in some of the
 							world's best restaurants, I have returned to the industry with fire in my eyes - ready for any challenge that is put into my path
 						</p>
-						<p>If I had to define myself in a few words, it would be that I am passionate, hard-working, a team-player, a fintech finatic, and a wicked chef! </p>
+						<p id="lastP">If I had to define myself in a few words, it would be that I am passionate, hard-working, a team-player, a fintech finatic, and a wicked chef! </p>
+						<a href={Resume} target="_blank" rel="noreferrer" className="flat-button">
+							RESUME&nbsp;<img id="download" style={{ display: 'block' }} src={Download}></img>
+							<img id="downloadBlue" style={{ display: 'none' }} src={DownloadBlue}></img>
+						</a>
 					</div>
 					<div className="stage-cube-cont">
 						<div className="cubespinner">
