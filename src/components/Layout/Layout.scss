@@ -10,7 +10,13 @@
 }
 @media screen and (max-width: 830px) {
 	.top-tags {
-		top: 100px;
+		display: none;
+	}
+	.tags {
+		display: none;
+	}
+	.bottom-tag-html {
+		display: none;
 	}
 }
 .tags {
@@ -35,7 +41,6 @@
 	width: 100%;
 	will-change: contents;
 	min-height: 566px;
-	// background-color: aliceblue;
 	opacity: 0;
 	margin: 0 0 0 110px;
 	transform-style: preserve-3d;

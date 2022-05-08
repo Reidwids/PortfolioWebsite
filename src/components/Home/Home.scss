@@ -28,7 +28,6 @@
 			font-size: 18px;
 			position: absolute;
 			margin-top: 18px;
-			margin-left: 20px;
 			animation: fadeIn 1s 1.7s backwards;
 			opacity: 0.6;
 		}
@@ -69,6 +68,22 @@
 		&:hover {
 			background: #ffd700;
 			color: #333;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.container {
+		margin: 0 !important;
+		display: flex;
+		justify-content: center;
+	}
+	.home-page {
+		.text-zone {
+			position: relative;
+			z-index: 10;
+			margin: 110px 0 0 0;
+			max-width: 350px;
 		}
 	}
 }

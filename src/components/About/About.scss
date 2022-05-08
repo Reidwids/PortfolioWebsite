@@ -47,22 +47,13 @@
 }
 
 @media screen and (max-width: 830px) {
-	.top-tags {
-		display: none;
-	}
-	.tags {
-		display: none;
-	}
-	.bottom-tag-html {
-		display: none;
-	}
 	.about-page {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		margin-left: 0 !important;
 		.text-zone {
-			margin-top: 210px;
+			margin-top: 200px;
 			#lastP {
 				margin-bottom: 0;
 			}
@@ -140,4 +131,11 @@
 	// 83% {
 	// 	transform: rotateX(90deg);
 	// }
+}
+@media (max-width: 480px) {
+	.about-page {
+		.text-zone {
+			margin-top: 150px;
+		}
+	}
 }

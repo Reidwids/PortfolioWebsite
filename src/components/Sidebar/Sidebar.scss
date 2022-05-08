@@ -26,9 +26,7 @@ nav {
 	display: block;
 	text-align: center;
 	height: 210px;
-	top: 35%;
 	width: 100%;
-
 	a {
 		font-size: 22px;
 		color: #4d4d4e;
@@ -37,6 +35,36 @@ nav {
 		height: 51px;
 		position: relative;
 		text-decoration: none;
+	}
+	a.active {
+		svg {
+			color: #ffd700;
+		}
+	}
+}
+ul {
+	width: 100%;
+	display: block;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	margin: 0;
+
+	li {
+		a {
+			padding: 7px 0;
+			display: block;
+			font-size: 20px;
+			line-height: 25px;
+
+			&:hover svg {
+				color: #ffd700;
+			}
+		}
+	}
+}
+@media screen and (min-width: 480px) {
+	a {
 		i {
 			transition: all 0.3s ease-out;
 		}
@@ -95,29 +123,6 @@ nav {
 		}
 	}
 }
-ul {
-	bottom: 20px;
-	width: 100%;
-	display: block;
-	padding: 0;
-	list-style: none;
-	text-align: center;
-	margin: 0;
-
-	li {
-		a {
-			padding: 7px 0;
-			display: block;
-			font-size: 20px;
-			line-height: 25px;
-
-			&:hover svg {
-				color: #ffd700;
-			}
-		}
-	}
-}
-
 @media screen and (max-width: 830px) {
 	.nav-bar {
 		width: 100%;
@@ -135,19 +140,41 @@ ul {
 		justify-content: space-between;
 		margin-left: 30px;
 		width: 40%;
+		height: 100%;
 		a {
 			display: flex;
 			width: 100%;
 			justify-content: center;
 			align-items: center;
-			margin: 0 10px;
 		}
 	}
 	ul {
 		width: 60px;
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
 		margin-right: 10px;
+		li {
+			margin-right: 15px;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.nav-bar {
+		justify-content: space-between;
+	}
+	nav {
+		margin-left: 0px;
+		width: 45%;
+		a {
+			margin: 0;
+			width: 30px;
+			// font-size: 20px;
+		}
+	}
+	ul {
+		a {
+			margin: 0;
+		}
 	}
 }
