@@ -138,3 +138,10 @@
 		}
 	}
 }
+@media (max-width: 480px) {
+	#projects-container {
+		width: 150%;
+		display: flex;
+		justify-content: center;
+	}
+}
