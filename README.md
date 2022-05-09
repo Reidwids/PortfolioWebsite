@@ -17,9 +17,6 @@ This website shows off all of my projects, as well as links my public profiles a
 #### Projects
 ![Image of Exchange](https://i.imgur.com/Zns344n.png)
 
-#### Bookmarks
-![Image of Bookmarks](https://i.imgur.com/gMfOXT7.png)
-
 <br>
 
 ## Technologies Used
