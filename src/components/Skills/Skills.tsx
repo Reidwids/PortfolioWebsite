@@ -22,7 +22,7 @@ export default function Skills() {
 			freezeActive: true,
 			shuffleTags: true,
 			shape: 'sphere',
-			zoom: 1,
+			zoom: 0.95,
 			noSelect: true,
 			textFont: 'Helvetica',
 			pinchZoom: true,

@@ -64,62 +64,64 @@ ul {
 	}
 }
 @media screen and (min-width: 480px) {
-	a {
-		i {
-			transition: all 0.3s ease-out;
-		}
-		&:hover {
-			color: #ffd700;
+	nav {
+		a {
+			i {
+				transition: all 0.3s ease-out;
+			}
+			&:hover {
+				color: #ffd700;
 
-			svg {
-				opacity: 0;
+				svg {
+					opacity: 0;
+				}
+				&:after {
+					opacity: 1;
+				}
 			}
 			&:after {
-				opacity: 1;
+				content: '';
+				font-size: 9px;
+				letter-spacing: 2px;
+				position: absolute;
+				bottom: 0;
+				display: block;
+				width: 100%;
+				text-align: center;
+				opacity: 0;
+				transition: all 0.3s ease-out;
 			}
-		}
-		&:after {
-			content: '';
-			font-size: 9px;
-			letter-spacing: 2px;
-			position: absolute;
-			bottom: 0;
-			display: block;
-			width: 100%;
-			text-align: center;
-			opacity: 0;
-			transition: all 0.3s ease-out;
-		}
 
-		&:first-child {
-			&::after {
-				content: 'HOME';
+			&:first-child {
+				&::after {
+					content: 'HOME';
+				}
 			}
 		}
-	}
-	a.about-link {
-		&:after {
-			content: 'ABOUT';
+		a.about-link {
+			&:after {
+				content: 'ABOUT';
+			}
 		}
-	}
-	a.contact-link {
-		&:after {
-			content: 'CONTACT';
+		a.contact-link {
+			&:after {
+				content: 'CONTACT';
+			}
 		}
-	}
-	a.skills-link {
-		&:after {
-			content: 'SKILLS';
+		a.skills-link {
+			&:after {
+				content: 'SKILLS';
+			}
 		}
-	}
-	a.projects-link {
-		&:after {
-			content: 'PROJECTS';
+		a.projects-link {
+			&:after {
+				content: 'PROJECTS';
+			}
 		}
-	}
-	a.active {
-		svg {
-			color: #ffd700;
+		a.active {
+			svg {
+				color: #ffd700;
+			}
 		}
 	}
 }

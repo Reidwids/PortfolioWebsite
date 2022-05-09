@@ -30,6 +30,7 @@ export default function Projects() {
 					</h1>
 					<p>I love project based work and am always looking for opportunities to apply my skillset while learning something new.</p>
 					<p>These are some of my favorite projects. Please click though to see the deployed product - and if you'd like to see the code, my github is linked on the nav-bar!</p>
+					<p>Note that this website itself is a project of mine, and was built from scratch using React! The code is also located on my github.</p>
 				</div>
 				<div id="projects-container">
 					<Swiper
