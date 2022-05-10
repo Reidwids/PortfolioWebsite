@@ -33,6 +33,9 @@ export default function Projects() {
 					<p>Note that this website itself is a project of mine, and was built from scratch using React! The code is also located on my github.</p>
 				</div>
 				<div id="projects-container">
+					<div className="projects-blurb" style={{ marginBottom: '8px', fontSize: '15px', fontStyle: 'italic' }}>
+						← Drag me! →
+					</div>
 					<Swiper
 						effect={'coverflow'}
 						centeredSlides={true}
@@ -92,7 +95,9 @@ export default function Projects() {
 							</div>
 						</SwiperSlide>
 					</Swiper>
-					<div id="projects-blurb">Click a card to visit the project!</div>
+					<div className="projects-blurb" style={{ marginTop: '10px' }}>
+						Click a card to visit the project!
+					</div>
 				</div>
 				<Loader active={true} type="ball-scale-ripple"></Loader>
 			</div>
