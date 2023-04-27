@@ -7,6 +7,7 @@ import StocksBoxImg from "../../assets/images/StockboxSVG.svg";
 import BattleshipImg from "../../assets/images/BattleshipScreenshot2.png";
 import StayPutImg from "../../assets/images/stayPut.png";
 import proteusLogo from "../../assets/images/proteusLogo.png";
+import AltbToken from "../../assets/images/AltbToken.webp";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -111,6 +112,20 @@ export default function Projects() {
                     bioinformatic analysis tool. I helped design and build the
                     full-stack app using Nest.js, React, PostgreSQL, Docker, and
                     the AWS cloud suite.
+                  </p>
+                </a>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="swiper-slide">
+              <div className="swiper-content">
+                <a href="https://altbase.com/" target="blank">
+                  <img src={AltbToken} id="psImg" />
+                  <p>
+                    <span style={{ fontWeight: 600 }}>Altbase </span> is a
+                    crypto market research & investment platform. I built both
+                    the full-stack mobile and webapp app using Nest.js and
+                    React, and worked with web3 and solidity to build and
+                    interact with smart contracts.
                   </p>
                 </a>
               </div>
