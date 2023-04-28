@@ -2,7 +2,7 @@
   "name": "portfoliowebsite",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://reidwids.github.io/PortfolioWebsite",
+  "homepage": "https://www.reidwids.net",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
