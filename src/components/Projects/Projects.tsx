@@ -8,6 +8,7 @@ import BattleshipImg from "../../assets/images/BattleshipScreenshot2.png";
 import StayPutImg from "../../assets/images/stayPut.png";
 import proteusLogo from "../../assets/images/proteusLogo.png";
 import AltbToken from "../../assets/images/AltbToken.webp";
+import tomsFlowers from "../../assets/images/tomsFlowers.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -99,6 +100,21 @@ export default function Projects() {
                     <span style={{ fontWeight: 600 }}>Proteus </span> is a
                     Toronto based SaaS company. I helped design and build their
                     landing website using Next.js, React, and TailwindCSS.
+                  </p>
+                </a>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="swiper-slide">
+              <div className="swiper-content">
+                <a href="https://www.toms-flowers.com/" target="blank">
+                  <img src={tomsFlowers} id={"psImg"} />
+                  <p>
+                    <span style={{ fontWeight: 600 }}>Toms Flowers </span> is a
+                    local flower shop close to my apartment in Toronto. Growing
+                    plants is a hobby of mine, and I was happy to help them
+                    build a website to help them grow their business. I built
+                    the website using React, SASS, framer-motion, and the google
+                    maps API.
                   </p>
                 </a>
               </div>

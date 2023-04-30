@@ -32,7 +32,25 @@ export default function Skills() {
       depth: 0.8,
     });
   });
-
+  const skillList = [
+    "HTML 5",
+    "CSS",
+    "SASS",
+    "JavaScript",
+    "AWS",
+    "Docker",
+    "mySQl",
+    "MongoDB",
+    "Git Hub",
+    "Node JS",
+    "React",
+    "Express",
+    "PostgreSQL",
+    "Python",
+    "Django",
+    "Linux",
+    "DevOps",
+  ];
   return (
     <div className="center-container">
       <div className="container skills-page">
@@ -47,18 +65,22 @@ export default function Skills() {
           <p>
             My assets lie in my full stack experience paired with strong soft
             skills such as leadership, attention to detail, quick-learning and
-            thinking, as well as a macro-understanding of business.
+            thinking, as well as a macro-understanding of business / management.
           </p>
           <p>
             My core skillset lies in web development - working in the frontend
             using{" "}
             <span style={{ color: "#ffd700" }}>
-              React, JavaScript, HTML5, and CSS/CSS libraries,{" "}
+              React, HTML, CSS, and frontend UI frameworks like Tailwind or MUI,{" "}
             </span>{" "}
             while also in the backend using{" "}
             <span style={{ color: "#ffd700" }}>
               NodeJS, Express, Python, Django, MongoDB, and PostgreSQL.
             </span>
+            I am also proficient in devOps, utilizing
+            <span style={{ color: "#ffd700" }}>AWS, linux, and docker</span>
+            to optimize internal processes and deployment, as well create a
+            scalable and maintainable application.
           </p>
           <p>
             I excel in fast-paced environments that strive to deliver
@@ -69,57 +91,13 @@ export default function Skills() {
         <div className="canvas-wrapper">
           <canvas width="400" height="400" id="myCanvas">
             <ul>
-              <li>
-                <a>HTML 5</a>
-              </li>
-              <li>
-                <a>CSS 3</a>
-              </li>
-              <li>
-                <a>SASS</a>
-              </li>
-              <li>
-                <a>JavaScript</a>
-              </li>
-              <li>
-                <a>jQuery</a>
-              </li>
-              <li>
-                <a>Bootstrap</a>
-              </li>
-              <li>
-                <a>mySQl</a>
-              </li>
-              <li>
-                <a>MongoDB</a>
-              </li>
-              <li>
-                <a>Git Hub</a>
-              </li>
-              <li>
-                <a>Node JS</a>
-              </li>
-              <li>
-                <a>React</a>
-              </li>
-              <li>
-                <a>Express</a>
-              </li>
-              <li>
-                <a>PostgreSQL</a>
-              </li>
-              <li>
-                <a>Python</a>
-              </li>
-              <li>
-                <a>Django</a>
-              </li>
-              <li>
-                <a>JWTs</a>
-              </li>
-              <li>
-                <a>AWS</a>
-              </li>
+              {skillList.map((skill, idx) => {
+                return (
+                  <li key={idx}>
+                    <a>{skill}</a>
+                  </li>
+                );
+              })}
             </ul>
           </canvas>
         </div>

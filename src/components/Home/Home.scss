@@ -1,89 +1,92 @@
 .home-page {
-	.text-zone {
-		position: relative;
-		z-index: 10;
-		margin-top: 110px;
-		max-width: 350px !important;
-	}
-	h1 {
-		color: #fff;
-		font-size: 53px;
-		margin: 0;
-		font-family: 'Coolvetica';
-		font-weight: 400;
+  .text-zone {
+    position: relative;
+    z-index: 10;
+    margin-top: 110px;
+    max-width: 350px !important;
+  }
+  h1 {
+    color: #fff;
+    font-size: 53px;
+    margin: 0;
+    font-family: "Coolvetica";
+    font-weight: 400;
 
-		&::before {
-			content: '<h1>';
-			font-family: 'La Belle Aurore';
-			color: #ffd700;
-			font-size: 18px;
-			position: absolute;
-			margin-top: -20px;
-			opacity: 0.6;
-		}
-		&::after {
-			content: '<h1>';
-			font-family: 'La Belle Aurore';
-			color: #ffd700;
-			font-size: 18px;
-			position: absolute;
-			margin-top: 18px;
-			animation: fadeIn 1s 1.7s backwards;
-			opacity: 0.6;
-		}
+    &::before {
+      content: "<h1>";
+      font-family: "La Belle Aurore";
+      color: #ffd700;
+      font-size: 18px;
+      position: absolute;
+      margin-top: -20px;
+      opacity: 0.6;
+    }
+    &::after {
+      content: "<h1>";
+      font-family: "La Belle Aurore";
+      color: #ffd700;
+      font-size: 18px;
+      position: absolute;
+      margin-top: 18px;
+      animation: fadeIn 1s 1.7s backwards;
+      opacity: 0.6;
+    }
 
-		img {
-			width: 38px;
-			margin-left: 20px;
-			opacity: 0;
-			height: auto;
-			animation: bounceIn 1.8s linear both;
-			animation-delay: 1.6s;
-		}
-	}
+    img {
+      width: 38px;
+      margin-left: 20px;
+      opacity: 0;
+      height: auto;
+      animation: bounceIn 1.8s linear both;
+      animation-delay: 1.6s;
+    }
+  }
 
-	h2 {
-		color: #8d8d8d;
-		margin-top: 20px;
-		font-weight: 400;
-		font-size: 11px;
-		font-family: sans-serif;
-		letter-spacing: 3px;
-		animation: fadeIn 1s 1.8s backwards;
-	}
-	.flat-button {
-		color: #ffd700;
-		font-size: 13px;
-		font-weight: 400;
-		letter-spacing: 4px;
-		font-family: sans-serif;
-		text-decoration: none;
-		padding: 10px 18px;
-		border: 1px solid #ffd700;
-		margin-top: 25px;
-		float: left;
-		animation: fadeIn 1s 1.8s backwards;
-		white-space: nowrap;
-		transition: 0.2s;
-		&:hover {
-			background: #ffd700;
-			color: #333;
-		}
-	}
+  h2 {
+    color: #8d8d8d;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 11px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    animation: fadeIn 1s 1.8s backwards;
+  }
+  .flat-button {
+    color: #ffd700;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid #ffd700;
+    margin-top: 25px;
+    float: left;
+    animation: fadeIn 1s 1.8s backwards;
+    white-space: nowrap;
+    transition: 0.2s;
+    &:hover {
+      background: #ffd700;
+      color: #333;
+    }
+  }
 }
 
 @media (max-width: 480px) {
-	.container {
-		margin: 0 !important;
-		display: flex;
-		justify-content: center;
-	}
-	.home-page {
-		.text-zone {
-			position: relative;
-			z-index: 10;
-			margin: 110px 0 0 0;
-			max-width: 350px;
-		}
-	}
+  .container {
+    margin: 0 !important;
+    display: flex;
+    justify-content: center;
+  }
+  .home-page {
+    .text-zone {
+      position: relative;
+      z-index: 10;
+      margin: 110px 0 0 0;
+      max-width: 350px;
+    }
+    #subtitle {
+      margin-top: 50px;
+    }
+  }
 }
