@@ -76,10 +76,10 @@ export default function Skills() {
             while also in the backend using{" "}
             <span style={{ color: "#ffd700" }}>
               NodeJS, Express, Python, Django, MongoDB, and PostgreSQL.
-            </span>
-            I am also proficient in devOps, utilizing
-            <span style={{ color: "#ffd700" }}>AWS, linux, and docker</span>
-            to optimize internal processes and deployment, as well create a
+            </span>{" "}
+            I am also proficient in devOps, utilizing{" "}
+            <span style={{ color: "#ffd700" }}>AWS, linux, and docker</span> to
+            optimize internal processes and deployment, as well create a
             scalable and maintainable application.
           </p>
           <p>
